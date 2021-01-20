@@ -1,0 +1,76 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  vertical-align: middle;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong {
+  font-family: "Raleway", sans-serif;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+li,
+a {
+  color: inherit;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.primary {
+  --bg: dodgerblue;
+  --col: white;
+}
+
+.danger {
+  --bg: red;
+  --col: white;
+}
+
+.success {
+  --bg: limegreen;
+  --col: white;
+}
+
+.rounded-sm {
+  border-radius: 0.1;
+}
+
+.filled-btn {
+  background: var(--bg);
+  color: var(--col);
+  padding: 0.2rem 1.5rem;
+  border: none;
+  outline: none;
+  margin: 0rem 0.05rem;
+  border: 0.005em solid var(--bg);
+}
+
+.filled-btn:hover,
+.filled-btn:focus,
+.filled-btn:active {
+  color: var(--bg);
+  background: var(--col);
+  transition: all 0.5s ease-in-out;
+  border: 0.005em solid var(--bg);
+}
