@@ -1,3 +1,5 @@
+import React from "react";
+
 import { useState } from "react";
 
 import { useStripe } from "@stripe/react-stripe-js";

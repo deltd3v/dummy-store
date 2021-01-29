@@ -1,3 +1,5 @@
+import React from "react";
+
 export const CheckOutSuccess = () => {
   const sessionId = new URL(window.location.href).searchParams.get(
     "session_id"
